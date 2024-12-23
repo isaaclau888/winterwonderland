@@ -1,0 +1,119 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom, #f0f8ff, #e0ffff);
+    color: #333;
+    text-align: center;
+}
+
+header {
+    background: #ffcc00;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+h1 {
+    margin: 0;
+}
+
+.game-section {
+    margin: 20px auto;
+    padding: 20px;
+    border: 2px solid #008080;
+    border-radius: 10px;
+    background: #fff;
+}
+
+#gameArea {
+    width: 300px;
+    height: 300px;
+    border: 2px dashed #008080;
+    position: relative;
+    overflow: hidden;
+    margin: 20px auto;
+}
+
+#snowflake {
+    width: 30px;
+    height: 30px;
+    background: url('https://cdn-icons-png.flaticon.com/512/2530/2530064.png') no-repeat center;
+    background-size: contain;
+    position: absolute;
+    display: none;
+    transition: transform 0.2s;
+}
+
+#snowflake:hover {
+    transform: scale(1.2);
+}
+
+#guide {
+    background: rgba(255, 255, 255, 0.9);
+    border: 2px solid #008080;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 400px;
+    position: relative;
+}
+
+.hidden {
+    display: none;
+}
+
+footer {
+    margin-top: 20px;
+    font-size: 0.8em;
+}
+
+.hidden {
+    display: none;
+}
+
+#autoPlayButton {
+    margin-top: 10px;
+}
+
+#levelUpNotification {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 128, 0, 0.8);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 20px;
+    z-index: 1000;
+    transition: opacity 0.5s ease;
+}
+
+.hidden {
+    display: none;
+}
+
+.show {
+    display: block;
+    opacity: 1;
+}
+
+button {
+    background-color: #008080; /* Teal color */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin: 5px;
+}
+
+button:hover {
+    background-color: #007777; /* Darker teal on hover */
+    transform: scale(1.05); /* Slightly enlarge the button */
+}
+
+button:active {
+    transform: scale(0.95); /* Shrink the button on click */
+}

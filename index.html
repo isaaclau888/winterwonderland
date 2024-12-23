@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Winter Wonderland</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Winter Wonderland!</h1>
+        <p>Experience the magic of winter and the joy of the holidays.</p>
+    </header>
+    
+    <main>
+        <section class="game-section">
+            <h2>Catch the Snowflakes Game!</h2>
+            <div id="gameArea">
+                <div id="snowflake"></div>
+            </div>
+            <button id="startButton">Start Game</button>
+            <p id="level">Level: 1</p>
+            <p id="timer">Time: 30</p>
+            <p id="score">Score: 0</p>
+            <p id="highScore">High Score: 0</p>
+            <button id="guideButton">How to Play</button>
+            <button id="autoPlayButton" class="hidden">Auto Play</button>
+        </section>
+
+        <section id="guide" class="hidden">
+            <h2>How to Play</h2>
+            <p><strong>Objective:</strong> Catch as many snowflakes as possible within the time limit.</p>
+            <p><strong>Start the Game:</strong> Click the "Start Game" button to begin.</p>
+            <p><strong>Catch the Snowflakes:</strong> Click on the snowflake as quickly as possible.</p>
+            <p><strong>Level Up:</strong> Score <strong>5 points</strong> to advance to the next level. The timer resets to <strong>30 seconds</strong> and the game becomes more challenging.</p>
+            <p><strong>Time Limit:</strong> You have <strong>30 seconds</strong> at each level. If you don't catch a snowflake within <strong>1.5 seconds</strong>, it will disappear and spawn in a new location.</p>
+            <p><strong>Scoring:</strong> Each snowflake caught gives you points equal to your current level.</p>
+            <p><strong>Game Over:</strong> The game ends when the timer reaches zero. Your final score will be displayed.</p>
+            <button id="closeGuide">Close</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Winter Wonderland. All rights reserved.</p>
+    </footer>
+
+    <audio id="bgMusic" loop>
+        <source src="background_music.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
